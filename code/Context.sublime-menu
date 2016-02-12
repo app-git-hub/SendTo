@@ -1,0 +1,19 @@
+[{
+	"caption": "-",	// horizontal line, enclose in {}?
+
+	"id": "SendTo",	// unsure
+	"caption": "Send Text To",
+	"mnemonic": "n",
+	"command": "prepare_context_menu",
+	"children": [
+			{"caption": "-"},	// so even if populating children takes time-- empty list doesn't come out
+			{"caption": DYNAMIC-fileName, "command": "send_to", "args": {"fileIndex": DYNAMIC-indexNum}},	//args part is probably useless cuz it will be clicked
+			{						----------  "  ----------						}
+	]
+}]
+
+
+// Main menu bar > Browse Packages... opens file manager UI
+// open or create "User" folder
+// copy paste this file
+
